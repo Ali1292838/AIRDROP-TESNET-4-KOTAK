@@ -41,7 +41,7 @@
     }
 
     .corner-title {
-      background: rgba(0, 0, 128, 0.8);
+      background: blue;
       padding: 8px 12px;
       font-size: 14px;
       font-weight: bold;
@@ -68,24 +68,36 @@
       color: #FFD700;
     }
 
-    a.corner-box {
+    .corner-box {
       height: 60px;
       background: rgba(0, 0, 100, 0.3);
       display: flex;
       justify-content: center;
       align-items: center;
       border-top: 2px solid rgba(255, 255, 255, 0.3);
-      transition: background 0.3s, transform 0.2s, color 0.3s;
-      color: #DDA0FF;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .corner-box a {
+      color:rgba(128, 0, 128, 0.8);
       text-decoration: none;
       font-weight: 600;
       font-size: 15px;
+      transition: color 0.3s;
     }
 
-    a.corner-box:hover {
+    .corner-box:hover {
       background: rgba(0, 0, 160, 0.6);
       transform: scale(1.02);
+    }
+
+    .corner-box a:hover {
       color: #FFD700;
+    }
+    .corner-box a:focus,
+    .corner-box a:active {
+      color: rgba(128, 0, 128, 0.8) !important;
+      outline: none;
     }
 
     @media (max-width: 768px) {
@@ -111,34 +123,34 @@
 
       <div class="corner-column">
         <div class="corner-title og-labs">TESNET AIRDROP</div>
-        <a href="https://devnet.t1protocol.com/bridge" class="corner-box">T1</a>
-        <a href="https://bridge.status.network/" class="corner-box">SNT</a>
-        <a href="https://testnet.pharosnetwork.xyz/experience?inviteCode=OabK4jBhDXOHalci" class="corner-box">PHAROS</a>
-        <a href="https://dex.x.ink/pool" class="corner-box">XOS</a>
+        <div class="corner-box"><a href="https://devnet.t1protocol.com/bridge" target="_blank">T1</a></div>
+        <div class="corner-box"><a href="https://bridge.status.network/" target="_blank">SNT</a></div>
+        <div class="corner-box"><a href="https://testnet.pharosnetwork.xyz/experience?inviteCode=OabK4jBhDXOHalci" target="_blank">PHAROS</a></div>
+        <div class="corner-box"><a href="https://dex.x.ink/pool" target="_blank">XOS</a></div>
       </div>
 
       <div class="corner-column">
         <div class="corner-title mega-eth">MEGA ETH</div>
-        <a href="https://cap.app/testnet" class="corner-box">CAP</a>
-        <a href="https://bebop.xyz/trade?network=megaeth&buy=" class="corner-box">BEBOP</a>
-        <a href="https://testnet.teko.finance/borrow/72572175584673509244743384162953726919624465952543019256792130552168516108177" class="corner-box">TEKO</a>
-        <a href="https://testnet.gte.xyz/" class="corner-box">GTE</a>
+        <div class="corner-box"><a href="https://cap.app/testnet" target="_blank">CAP</a></div>
+        <div class="corner-box"><a href="https://bebop.xyz/trade?network=megaeth&buy=" target="_blank">BEBOP</a></div>
+        <div class="corner-box"><a href="https://testnet.teko.finance/borrow/72572175584673509244743384162953726919624465952543019256792130552168516108177" target="_blank">TEKO</a></div>
+        <div class="corner-box"><a href="https://testnet.gte.xyz/" target="_blank">GTE</a></div>
       </div>
 
       <div class="corner-column">
         <div class="corner-title rise">RISE</div>
-        <a href="https://app.standardweb3.com/trade" class="corner-box">STANDARD</a>
-        <a href="https://www.nitrodex.xyz/trade?chain=11155931" class="corner-box">NITRODEX</a>
-        <a href="https://gaspump.network/swap" class="corner-box">GASPUMP</a>
-        <a href="https://testnet.b3x.ai/#/trade" class="corner-box">B3X</a>
+        <div class="corner-box"><a href="https://app.standardweb3.com/trade" target="_blank">STANDARD</a></div>
+        <div class="corner-box"><a href="https://www.nitrodex.xyz/trade?chain=11155931" target="_blank">NITRODEX</a></div>
+        <div class="corner-box"><a href="https://gaspump.network/swap" target="_blank">GASPUMP</a></div>
+        <div class="corner-box"><a href="https://testnet.b3x.ai/#/trade" target="_blank">B3X</a></div>
       </div>
 
       <div class="corner-column">
         <div class="corner-title omega">SOMNIA</div>
-        <a href="https://testnet.somnia.network/" class="corner-box">SOMNIA</a>
-        <a href="https://testnet.somnia.network/swap" class="corner-box">SWAP</a>
-        <a href="https://quest.somnia.network/referrals/2421B744" class="corner-box">QUEST</a>
-        <a href="#" class="corner-box">KOSONG</a>
+        <div class="corner-box"><a href="https://testnet.somnia.network/" target="_blank">SOMNIA</a></div>
+        <div class="corner-box"><a href="https://testnet.somnia.network/swap" target="_blank">SWAP</a></div>
+        <div class="corner-box"><a href="https://quest.somnia.network/referrals/2421B744" target="_blank">QUEST</a></div>
+        <div class="corner-box"><a href="#" target="_blank">KOSONG</a></div>
       </div>
 
     </div>
